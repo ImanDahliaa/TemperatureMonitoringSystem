@@ -27,14 +27,22 @@ A beginner-friendly Java Swing application that simulates temperature monitoring
 ## 📁 Folder Structure
 src/
 ├─ projectOperation/
-│  ├─ Sensor.java
-│  ├─ TemperatureSensor.java
-│  ├─ AlertSystem.java
-│  ├─ EmailAlert.java
-│  ├─ SmsAlert.java
-│  └─ Room.java
-└─ projectUi/
-└─ MainWindow.java
+│  
+├─ Sensor.java
+│  
+├─ TemperatureSensor.java
+│  
+├─ AlertSystem.java
+│  
+├─ EmailAlert.java
+│  
+├─ SmsAlert.java
+│  
+└─ Room.java
+└─
+projectUi/
+└─
+MainWindow.java
 
 ## 🛠️ Technologies
 - Java Swing
