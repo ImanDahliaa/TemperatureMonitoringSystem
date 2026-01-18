@@ -5,9 +5,7 @@ This is a Java Swing project that checks temperature and shows alerts.
 ## Screenshots
 
 ### Safe Temperature
-When the temperature is normal:
 ![Safe Temperature](screenshots/safe-temp.png)
 
 ### High Temperature
-When the temperature is too high:
 ![High Temperature](screenshots/high-temp.png)
