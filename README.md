@@ -40,9 +40,7 @@ src/
 ├─ SmsAlert.java
 │  
 └─ Room.java
-
 └─ projectUi/
-
 └─MainWindow.java
 
 ## 🛠️ Technologies
