@@ -1,6 +1,6 @@
 # 🌡️ Temperature Monitoring System
 
-[![Java CI with Maven](https://github.com/ImanDahliaa/temperature-monitoring-system/actions/workflows/maven.yml/badge.svg)](https://github.com/ImanDahliaa/temperature-monitoring-system/actions/workflows/maven.yml)
+[![Java CI with Maven](https://github.com/ImanDahliaa/TemperatureMonitoringSystem/actions/workflows/maven.yml/badge.svg)](https://github.com/ImanDahliaa/TemperatureMonitoringSystem/actions/workflows/maven.yml)
 
 A beginner-friendly Java Swing application that simulates temperature monitoring with alert messages and a modern dark theme.
 
