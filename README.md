@@ -12,15 +12,14 @@ A beginner-friendly Java Swing application that simulates temperature monitoring
 
 ## 📸 Screenshots
 
-<h3>🟢 Start Screen</h3>
-<img src="screenshots/start.png" alt="Start Screen" width="100%" style="border:1px solid #ccc;">
+### 🟢 Start Screen
+![Start Screen](screenshots/start.png)
 
-<h3>✅ Safe Temperature</h3>
-<img src="screenshots/safe-temp.png" alt="Safe Temperature" width="100%" style="border:1px solid #ccc;">
+### ✅ Safe Temperature
+![Safe Temperature](screenshots/safe-temp.png)
 
-<h3>🔴 High Temperature</h3>
-<img src="screenshots/high-temp.png" alt="High Temperature" width="100%" style="border:1px solid #ccc;">
-
+### 🔴 High Temperature
+![High Temperature](screenshots/high-temp.png)
 
 ## 🧪 How to Run
 1. Open in NetBeans, IntelliJ, or Eclipse.
