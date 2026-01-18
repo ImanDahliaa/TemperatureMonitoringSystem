@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🌡️ Temperature Monitoring System
 
 [![Java CI with Maven](https://github.com/ImanDahliaa/TemperatureMonitoringSystem/actions/workflows/maven.yml/badge.svg)](https://github.com/ImanDahliaa/TemperatureMonitoringSystem/actions/workflows/maven.yml)
@@ -103,4 +102,3 @@ A Java Swing-based temperature monitoring system that simulates real-time temper
 **Mohamad Iman**  
 Bachelor of Electronic Engineering Technology (Hons.)  
 Universiti Malaysia Perlis (UniMAP)
->>>>>>> 0dee82e (Create README.md)
