@@ -25,11 +25,26 @@ A beginner-friendly Java Swing application that simulates temperature monitoring
    - `projectOperation.Room`
 
 ## 📁 Folder Structure
+src/
+├─ projectOperation/
+│  ├─ Sensor.java
+│  ├─ TemperatureSensor.java
+│  ├─ AlertSystem.java
+│  ├─ EmailAlert.java
+│  ├─ SmsAlert.java
+│  └─ Room.java
+└─ projectUi/
+└─ MainWindow.java
 
 ## 🛠️ Technologies
 - Java Swing
 - FlatLaf (for dark theme)
 - Git + GitHub
+
+## 👨‍💻 Author
+- **Name:** Mohamad Iman
+- **Location:** Perlis, Malaysia
+- **GitHub:** [Iman Dahliaa](https://github.com/ImanDahliaa)
 
 ## 📄 License
 This project is for educational purposes.
