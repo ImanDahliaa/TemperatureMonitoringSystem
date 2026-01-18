@@ -36,7 +36,6 @@ src/
 └─ projectUi/
    └─ MainWindow.java
 
-
 ## 🛠️ Technologies
 - Java Swing
 - FlatLaf (for dark theme)
@@ -46,7 +45,7 @@ src/
 
 - **Name:** Iman Dahliaa
 - **Location:** Perlis, Malaysia  
-- **Education:** Bachelor of Electronics Engineering Technology (Electronics Systems) (Hons.)  
+- **Education:** Bachelor of Electronics Engineering Technology
 - **GitHub:** [Iman Dahliaa](https://github.com/ImanDahliaa)
 
 
