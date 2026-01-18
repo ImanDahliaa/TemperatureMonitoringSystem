@@ -12,6 +12,9 @@ A beginner-friendly Java Swing application that simulates temperature monitoring
 
 ## 📸 Screenshots
 
+### 🟢 Start Screen 
+![Start Screen](screenshots/start.png)
+
 ### ✅ Safe Temperature
 ![Safe Temperature](screenshots/safe-temp.png)
 
