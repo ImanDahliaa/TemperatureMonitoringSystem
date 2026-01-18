@@ -43,9 +43,13 @@ src/
 - Git + GitHub
 
 ## 👨‍💻 Author
-- **Name:** Mohamad Iman
-- **Location:** Perlis, Malaysia
+
+- **Name:** Mohamad Iman  
+- **Location:** Perlis, Malaysia  
+- **Education:** Universiti Malaysia Perlis  
+  Bachelor of Electronics Engineering Technology (Electronics Systems) (Hons.)  
 - **GitHub:** [Iman Dahliaa](https://github.com/ImanDahliaa)
+
 
 ## 📄 License
 This project is for educational purposes.
