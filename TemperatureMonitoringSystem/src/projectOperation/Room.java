@@ -10,38 +10,45 @@ public class Room extends JFrame {
     private JLabel emailLabel;
     private JLabel smsLabel;
     private JButton startButton;
-    private JButton stopButton;  
+    private JButton stopButton;
     private Timer timer;
 
     public Room() {
         // Window setup
         setTitle("Temperature Monitoring System");
-        setSize(400, 300);
+        setSize(420, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
         // Dark theme background
-        getContentPane().setBackground(Color.DARK_GRAY);
+        getContentPane().setBackground(new Color(30, 30, 30));
+        setLayout(new GridLayout(5, 1, 10, 10));
+
+        // Font
+        Font font = new Font("Segoe UI", Font.BOLD, 13);
 
         // Components
-        statusLabel = new JLabel("DHT22 Sensor");
+        statusLabel = new JLabel("DHT22 Sensor", SwingConstants.CENTER);
         statusLabel.setForeground(Color.WHITE);
-        statusLabel.setHorizontalAlignment(SwingConstants.CENTER);
+        statusLabel.setFont(font);
 
-        emailLabel = new JLabel("📧 Email Alert: --");
-        emailLabel.setForeground(Color.ORANGE);
-        emailLabel.setHorizontalAlignment(SwingConstants.CENTER);
+        emailLabel = new JLabel("📧 Email Alert: --", SwingConstants.CENTER);
+        emailLabel.setForeground(new Color(255, 165, 0));
+        emailLabel.setFont(font);
 
-        smsLabel = new JLabel("📱 SMS Alert: --");
-        smsLabel.setForeground(Color.CYAN);
-        smsLabel.setHorizontalAlignment(SwingConstants.CENTER);
+        smsLabel = new JLabel("📱 SMS Alert: --", SwingConstants.CENTER);
+        smsLabel.setForeground(new Color(0, 200, 200));
+        smsLabel.setFont(font);
 
+        // Buttons
         startButton = new JButton("Start Monitoring");
         stopButton = new JButton("Stop Monitoring");
-        stopButton.setEnabled(false); // disabled until monitoring starts
+        stopButton.setEnabled(false);
 
-        // Layout (5 rows now)
-        setLayout(new GridLayout(5, 1));
+        styleButton(startButton, new Color(0, 153, 76)); // green
+        styleButton(stopButton, new Color(204, 0, 0));   // red
+
+        // Add components
         add(statusLabel);
         add(emailLabel);
         add(smsLabel);
@@ -49,49 +56,62 @@ public class Room extends JFrame {
         add(stopButton);
 
         // Timer: runs every 5 seconds
-        timer = new Timer(5000, new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                double temp = generateTemperature();
+        timer = new Timer(5000, e -> {
+            double temp = generateTemperature();
 
-                if (temp >= 30.0) {
-                    statusLabel.setText(
-                        "DHT22 Sensor   TEMP: " + String.format("%.2f", temp) + "°C  STATUS: HIGH TEMP"
-                    );
-                    sendEmailAlert(temp);
-                    sendSmsAlert(temp);
-                } else {
-                    statusLabel.setText(
-                        "DHT22 Sensor   TEMP: " + String.format("%.2f", temp) + "°C  STATUS: SAFE"
-                    );
-                    emailLabel.setText("📧 Email Alert: Temperature is SAFE (" 
+            if (temp >= 30.0) {
+                statusLabel.setText(
+                    "DHT22 Sensor  TEMP: " + String.format("%.2f", temp) + "°C  STATUS: HIGH"
+                );
+                sendEmailAlert(temp);
+                sendSmsAlert(temp);
+            } else {
+                statusLabel.setText(
+                    "DHT22 Sensor  TEMP: " + String.format("%.2f", temp) + "°C  STATUS: SAFE"
+                );
+                emailLabel.setText("📧 Email Alert: Temperature is SAFE (" 
                         + String.format("%.2f", temp) + "°C)");
-                    smsLabel.setText("📱 SMS Alert: Temperature is SAFE (" 
+                smsLabel.setText("📱 SMS Alert: Temperature is SAFE (" 
                         + String.format("%.2f", temp) + "°C)");
-                }
             }
         });
 
-        // Start button action
-        startButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                timer.start();
-                startButton.setEnabled(false);
-                stopButton.setEnabled(true);
-            }
+        // Start button
+        startButton.addActionListener(e -> {
+            timer.start();
+            startButton.setEnabled(false);
+            stopButton.setEnabled(true);
         });
 
-        // Stop button action
-        stopButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                timer.stop();
-                startButton.setEnabled(true);
-                stopButton.setEnabled(false);
-                statusLabel.setText("DHT22 Sensor - Monitoring stopped");
-                emailLabel.setText("📧 Email Alert: --");
-                smsLabel.setText("📱 SMS Alert: --");
+        // Stop button
+        stopButton.addActionListener(e -> {
+            timer.stop();
+            startButton.setEnabled(true);
+            stopButton.setEnabled(false);
+            statusLabel.setText("DHT22 Sensor - Monitoring stopped");
+            emailLabel.setText("📧 Email Alert: --");
+            smsLabel.setText("📱 SMS Alert: --");
+        });
+    }
+
+    // Button styling
+    private void styleButton(JButton button, Color bgColor) {
+        button.setBackground(bgColor);
+        button.setForeground(Color.WHITE);
+        button.setFocusPainted(false);
+        button.setBorderPainted(false);
+        button.setOpaque(true);
+        button.setFont(new Font("Segoe UI", Font.BOLD, 14));
+        button.setCursor(new Cursor(Cursor.HAND_CURSOR));
+
+        // Hover effect
+        button.addMouseListener(new MouseAdapter() {
+            public void mouseEntered(MouseEvent e) {
+                button.setBackground(bgColor.brighter());
+            }
+
+            public void mouseExited(MouseEvent e) {
+                button.setBackground(bgColor);
             }
         });
     }
@@ -101,22 +121,19 @@ public class Room extends JFrame {
         return 20.0 + Math.random() * 40.0;
     }
 
-    // Show email alert in GUI
+    // Show email alert
     private void sendEmailAlert(double temp) {
-        emailLabel.setText("📧 Email Alert: HIGH TEMP! Temp: " 
-            + String.format("%.2f", temp) + "°C");
+        emailLabel.setText("📧 Email Alert: HIGH TEMP! (" 
+                + String.format("%.2f", temp) + "°C)");
     }
 
-    // Show SMS alert in GUI
+    // Show SMS alert
     private void sendSmsAlert(double temp) {
-        smsLabel.setText("📱 SMS Alert: HIGH TEMP! Temp: " 
-            + String.format("%.2f", temp) + "°C");
+        smsLabel.setText("📱 SMS Alert: HIGH TEMP! (" 
+                + String.format("%.2f", temp) + "°C)");
     }
 
-    // Main method
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> {
-            new Room().setVisible(true);
-        });
+        SwingUtilities.invokeLater(() -> new Room().setVisible(true));
     }
 }
