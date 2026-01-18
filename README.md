@@ -25,3 +25,11 @@ A beginner-friendly Java Swing application that simulates temperature monitoring
    - `projectOperation.Room`
 
 ## 📁 Folder Structure
+
+## 🛠️ Technologies
+- Java Swing
+- FlatLaf (for dark theme)
+- Git + GitHub
+
+## 📄 License
+This project is for educational purposes.
