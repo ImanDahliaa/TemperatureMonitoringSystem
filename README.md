@@ -1,6 +1,6 @@
 # 🌡️ Temperature Monitoring System
 
-[![Java CI with Maven](https://github.com/ImanDahliaa/TemperatureMonitoringSystem/actions/workflows/maven.yml/badge.svg)](https://github.com/ImanDahliaa/TemperatureMonitoringSystem/actions/workflows/maven.yml)
+[![Java CI with Ant](https://github.com/ImanDahliaa/TemperatureMonitoringSystem/actions/workflows/ant.yml/badge.svg)](https://github.com/ImanDahliaa/TemperatureMonitoringSystem/actions/workflows/ant.yml)
 
 A beginner-friendly Java Swing application that simulates temperature monitoring with alert messages and a modern dark theme.
 
@@ -36,14 +36,15 @@ To download the project as a ZIP file:
 3. Select **Download ZIP**.
 4. Extract the ZIP file and open it in your IDE.
 
-## 📦 Maven Setup
-This project can also be built with **Maven**.
+## 📦 Ant Setup
+This project can be built with **Apache Ant** (using JDK 17).
 
-1. Ensure you have Maven installed (`mvn -v` to check).
-2. Place the provided `pom.xml` in the root of the project.
+1. Ensure you have Ant installed (`ant -version` to check).
+2. Place the provided `build.xml` in the root of the project.
 3. Build the project:
    ```bash
-   mvn clean package
+   ant clean
+   ant jar
 
 ## 📁 Folder Structure
 
