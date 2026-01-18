@@ -1,3 +1,6 @@
+- name: Install Ant
+  run: sudo apt-get update && sudo apt-get install -y ant
+  
 name: Java CI with Ant
 
 on:
