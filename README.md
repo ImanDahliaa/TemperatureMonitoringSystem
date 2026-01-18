@@ -73,33 +73,3 @@ This project can be built with **Apache Ant** (using JDK 17).
 
 ## 📄 License
 This project is for educational purposes.
-=======
-# Temperature Monitoring System
-
-A Java Swing-based temperature monitoring system that simulates real-time temperature readings and triggers alerts using Email and SMS notification mechanisms.
-
-## Features
-- Random temperature simulation (20°C – 60°C)
-- Email alert system
-- SMS alert system
-- Dark UI using FlatLaf
-- Object-Oriented Programming (OOP) principles
-
-## Technologies Used
-- Java (Swing)
-- FlatLaf 3.7
-- NetBeans (Ant Project)
-
-## Project Structure
-- `projectOperation` – Core logic and alert system
-- `projectUi` – GUI (Swing)
-
-## How to Run
-1. Open the project in NetBeans
-2. Ensure FlatLaf JAR is added to Libraries
-3. Run `MainWindow` or `Room` class
-
-## Author
-**Mohamad Iman**  
-Bachelor of Electronic Engineering Technology (Hons.)  
-Universiti Malaysia Perlis (UniMAP)
