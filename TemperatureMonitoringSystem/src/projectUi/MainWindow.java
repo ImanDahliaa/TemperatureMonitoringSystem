@@ -27,7 +27,7 @@ public class MainWindow extends JFrame {
             e.printStackTrace();
         }
 
-        t1 = new TemperatureSensor("S001");
+        t1 = new TemperatureSensor("DHT 22 Sensor");
 
         setTitle("Temperature Monitoring System");
         setSize(450, 300);
@@ -42,7 +42,7 @@ public class MainWindow extends JFrame {
         gbc.gridx = 0;
         gbc.gridy = 0;
 
-        sensorLabel = new JLabel("Sensor ID: " + t1.getSensorid(), SwingConstants.CENTER);
+        sensorLabel = new JLabel("DHT 22 Sensor " + t1.getSensorid(), SwingConstants.CENTER);
         sensorLabel.setForeground(Color.WHITE);
         add(sensorLabel, gbc);
 
