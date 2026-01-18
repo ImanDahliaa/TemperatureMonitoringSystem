@@ -26,7 +26,8 @@ A beginner-friendly Java Swing application that simulates temperature monitoring
 
 ## 📁 Folder Structure
 src/
-├─ projectOperation/
+├
+─ projectOperation/
 │  
 ├─ Sensor.java
 │  
