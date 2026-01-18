@@ -44,10 +44,9 @@ src/
 
 ## 👨‍💻 Author
 
-- **Name:** Mohamad Iman  
+- **Name:** Iman Dahliaa
 - **Location:** Perlis, Malaysia  
-- **Education:** Universiti Malaysia Perlis  
-  Bachelor of Electronics Engineering Technology (Electronics Systems) (Hons.)  
+- **Education:** Bachelor of Electronics Engineering Technology (Electronics Systems) (Hons.)  
 - **GitHub:** [Iman Dahliaa](https://github.com/ImanDahliaa)
 
 
