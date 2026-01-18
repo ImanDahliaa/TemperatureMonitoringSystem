@@ -10,12 +10,13 @@ public class Room extends JFrame {
     private JLabel emailLabel;
     private JLabel smsLabel;
     private JButton startButton;
+    private JButton stopButton;  
     private Timer timer;
 
     public Room() {
         // Window setup
         setTitle("Temperature Monitoring System");
-        setSize(400, 250);
+        setSize(400, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
@@ -36,13 +37,16 @@ public class Room extends JFrame {
         smsLabel.setHorizontalAlignment(SwingConstants.CENTER);
 
         startButton = new JButton("Start Monitoring");
+        stopButton = new JButton("Stop Monitoring");
+        stopButton.setEnabled(false); // disabled until monitoring starts
 
-        // Layout
-        setLayout(new GridLayout(4, 1));
+        // Layout (5 rows now)
+        setLayout(new GridLayout(5, 1));
         add(statusLabel);
         add(emailLabel);
         add(smsLabel);
         add(startButton);
+        add(stopButton);
 
         // Timer: runs every 5 seconds
         timer = new Timer(5000, new ActionListener() {
@@ -68,12 +72,26 @@ public class Room extends JFrame {
             }
         });
 
-        // Button starts the loop
+        // Start button action
         startButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 timer.start();
-                startButton.setEnabled(false); // disable button once loop starts
+                startButton.setEnabled(false);
+                stopButton.setEnabled(true);
+            }
+        });
+
+        // Stop button action
+        stopButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                timer.stop();
+                startButton.setEnabled(true);
+                stopButton.setEnabled(false);
+                statusLabel.setText("DHT22 Sensor - Monitoring stopped");
+                emailLabel.setText("📧 Email Alert: --");
+                smsLabel.setText("📱 SMS Alert: --");
             }
         });
     }
