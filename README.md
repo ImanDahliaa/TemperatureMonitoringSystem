@@ -27,6 +27,13 @@ A beginner-friendly Java Swing application that simulates temperature monitoring
    - `projectUi.MainWindow`
    - `projectOperation.Room`
 
+## 📥 Download ZIP
+To download the project as a ZIP file:
+1. Go to the repository page on GitHub.
+2. Click the green **Code** button.
+3. Select **Download ZIP**.
+4. Extract the ZIP file and open it in your IDE.
+
 ## 📁 Folder Structure
 
 - src/
@@ -51,7 +58,6 @@ A beginner-friendly Java Swing application that simulates temperature monitoring
 - **Location:** Perlis, Malaysia  
 - **Education:** Bachelor of Electronics Engineering Technology
 - **GitHub:** [Iman Dahliaa](https://github.com/ImanDahliaa)
-
 
 ## 📄 License
 This project is for educational purposes.
