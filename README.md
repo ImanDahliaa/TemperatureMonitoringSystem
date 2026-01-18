@@ -40,10 +40,10 @@ src/
 ├─ SmsAlert.java
 │  
 └─ Room.java
-└─
-projectUi/
-└─
-MainWindow.java
+
+└─ projectUi/
+
+└─MainWindow.java
 
 ## 🛠️ Technologies
 - Java Swing
