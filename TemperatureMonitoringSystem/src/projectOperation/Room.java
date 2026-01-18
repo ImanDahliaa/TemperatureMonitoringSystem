@@ -1,4 +1,3 @@
-//Room
 package projectOperation;
 
 import javax.swing.*;
@@ -24,7 +23,7 @@ public class Room extends JFrame {
         getContentPane().setBackground(Color.DARK_GRAY);
 
         // Components
-        statusLabel = new JLabel("Sensor ID: S001");
+        statusLabel = new JLabel("DHT22 Sensor");
         statusLabel.setForeground(Color.WHITE);
         statusLabel.setHorizontalAlignment(SwingConstants.CENTER);
 
@@ -53,13 +52,13 @@ public class Room extends JFrame {
 
                 if (temp >= 30.0) {
                     statusLabel.setText(
-                        "Sensor ID: S001   TEMP: " + String.format("%.2f", temp) + "°C  STATUS: HIGH TEMP"
+                        "DHT22 Sensor   TEMP: " + String.format("%.2f", temp) + "°C  STATUS: HIGH TEMP"
                     );
                     sendEmailAlert(temp);
                     sendSmsAlert(temp);
                 } else {
                     statusLabel.setText(
-                        "Sensor ID: S001   TEMP: " + String.format("%.2f", temp) + "°C  STATUS: SAFE"
+                        "DHT22 Sensor   TEMP: " + String.format("%.2f", temp) + "°C  STATUS: SAFE"
                     );
                     emailLabel.setText("📧 Email Alert: Temperature is SAFE (" 
                         + String.format("%.2f", temp) + "°C)");
