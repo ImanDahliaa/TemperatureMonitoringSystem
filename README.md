@@ -7,9 +7,7 @@ A beginner-friendly Java Swing application that simulates temperature monitoring
 ## 🚀 Features
 - Random temperature generation (20°C to 60°C)
 - Email and SMS alerts for high temperature
-- Two UIs:
-  - `MainWindow`: Manual temperature check
-  - `Room`: Auto-monitoring every 5 seconds
+- Auto-monitoring every 5 seconds (`Room`)
 - FlatLaf dark theme for clean visuals
 
 ## 📸 Screenshots
@@ -24,12 +22,11 @@ A beginner-friendly Java Swing application that simulates temperature monitoring
 ![High Temperature](screenshots/high-temp.png)
 
 ### 🚫 Stop Screen
-![Start Screen](screenshots/stop.png)
+![Stop Screen](screenshots/stop.png)
 
 ## 🧪 How to Run
 1. Open in NetBeans, IntelliJ, or Eclipse.
-2. Run either:
-   - `projectUi.MainWindow`
+2. Run:
    - `projectOperation.Room`
 
 ## 📥 Download ZIP
@@ -59,8 +56,6 @@ This project can be built with **Apache Ant** (using JDK 17).
     - EmailAlert.java
     - SmsAlert.java
     - Room.java
-  - projectUi/
-    - MainWindow.java
 
 ## 🛠️ Technologies
 - Java Swing
