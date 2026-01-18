@@ -4,7 +4,6 @@
 
 A beginner-friendly Java Swing application that simulates temperature monitoring with alert messages and a modern dark theme.
 
-
 ## 🚀 Features
 - Random temperature generation (20°C to 60°C)
 - Email and SMS alerts for high temperature
