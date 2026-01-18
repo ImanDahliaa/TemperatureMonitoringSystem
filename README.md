@@ -23,6 +23,9 @@ A beginner-friendly Java Swing application that simulates temperature monitoring
 ### 🔴 High Temperature
 ![High Temperature](screenshots/high-temp.png)
 
+### 🚫 Stop Screen
+![Start Screen](screenshots/stop.png)
+
 ## 🧪 How to Run
 1. Open in NetBeans, IntelliJ, or Eclipse.
 2. Run either:
