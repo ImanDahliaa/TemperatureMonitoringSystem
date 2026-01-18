@@ -24,21 +24,15 @@ public class Room extends JFrame {
         getContentPane().setBackground(new Color(30, 30, 30));
         setLayout(new GridLayout(5, 1, 10, 10));
 
-        // Font
-        Font font = new Font("Segoe UI", Font.BOLD, 13);
-
-        // Components
+        // Components (no custom font)
         statusLabel = new JLabel("DHT22 Sensor", SwingConstants.CENTER);
         statusLabel.setForeground(Color.WHITE);
-        statusLabel.setFont(font);
 
         emailLabel = new JLabel("📧 Email Alert: --", SwingConstants.CENTER);
         emailLabel.setForeground(new Color(255, 165, 0));
-        emailLabel.setFont(font);
 
         smsLabel = new JLabel("📱 SMS Alert: --", SwingConstants.CENTER);
         smsLabel.setForeground(new Color(0, 200, 200));
-        smsLabel.setFont(font);
 
         // Buttons
         startButton = new JButton("Start Monitoring");
@@ -67,7 +61,7 @@ public class Room extends JFrame {
                 sendSmsAlert(temp);
             } else {
                 statusLabel.setText(
-                    "DHT22 Sensor  TEMP: " + String.format("%.2f", temp) + "°C  STATUS: SAFE"
+                    "DHT22 Sensor  TEMP: " + String.format("%.2f", temp) + "°C  STATUS: NORMAL"
                 );
                 emailLabel.setText("📧 Email Alert: Temperature is SAFE (" 
                         + String.format("%.2f", temp) + "°C)");
@@ -94,14 +88,13 @@ public class Room extends JFrame {
         });
     }
 
-    // Button styling
+    // Button styling (removed font customization)
     private void styleButton(JButton button, Color bgColor) {
         button.setBackground(bgColor);
         button.setForeground(Color.WHITE);
         button.setFocusPainted(false);
         button.setBorderPainted(false);
         button.setOpaque(true);
-        button.setFont(new Font("Segoe UI", Font.BOLD, 14));
         button.setCursor(new Cursor(Cursor.HAND_CURSOR));
 
         // Hover effect
@@ -123,13 +116,13 @@ public class Room extends JFrame {
 
     // Show email alert
     private void sendEmailAlert(double temp) {
-        emailLabel.setText("📧 Email Alert: HIGH TEMP! (" 
+        emailLabel.setText("📧 Email Alert: Warning High Temperature! (" 
                 + String.format("%.2f", temp) + "°C)");
     }
 
     // Show SMS alert
     private void sendSmsAlert(double temp) {
-        smsLabel.setText("📱 SMS Alert: HIGH TEMP! (" 
+        smsLabel.setText("📱 SMS Alert: Warning High Temperature! (" 
                 + String.format("%.2f", temp) + "°C)");
     }
 
