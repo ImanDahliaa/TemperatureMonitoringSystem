@@ -1,6 +1,9 @@
 # 🌡️ Temperature Monitoring System
 
+[![Java CI with Maven](https://github.com/ImanDahliaa/temperature-monitoring-system/actions/workflows/maven.yml/badge.svg)](https://github.com/ImanDahliaa/temperature-monitoring-system/actions/workflows/maven.yml)
+
 A beginner-friendly Java Swing application that simulates temperature monitoring with alert messages and a modern dark theme.
+
 
 ## 🚀 Features
 - Random temperature generation (20°C to 60°C)
@@ -33,6 +36,15 @@ To download the project as a ZIP file:
 2. Click the green **Code** button.
 3. Select **Download ZIP**.
 4. Extract the ZIP file and open it in your IDE.
+
+## 📦 Maven Setup
+This project can also be built with **Maven**.
+
+1. Ensure you have Maven installed (`mvn -v` to check).
+2. Place the provided `pom.xml` in the root of the project.
+3. Build the project:
+   ```bash
+   mvn clean package
 
 ## 📁 Folder Structure
 
