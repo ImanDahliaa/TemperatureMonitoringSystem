@@ -47,19 +47,17 @@ This project can be built with **Apache Ant** (using JDK 17).
    ant jar
 
 ## 📁 Folder Structure
-src/
-├── projectOperation/
-│   ├── sensors/
-│   │   ├── Sensor.java
-│   │   └── TemperatureSensor.java
-│   ├── alerts/
-│   │   ├── AlertSystem.java
-│   │   ├── EmailAlert.java
-│   │   └── SmsAlert.java
-│   └── Room.java
-└── projectUi/
-    └── MainWindow.java
-
+- **src/**
+  - **projectOperation/**
+    - Sensor.java  
+    - TemperatureSensor.java  
+    - AlertSystem.java  
+    - EmailAlert.java  
+  - SmsAlert.java  
+  - Room.java  
+  - **projectUi/**
+    - MainWindow.java
+    
 ## 🛠️ Technologies
 - Java Swing
 - FlatLaf (for dark theme)
