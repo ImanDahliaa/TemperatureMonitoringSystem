@@ -53,8 +53,8 @@ This project can be built with **Apache Ant** (using JDK 17).
     - TemperatureSensor.java  
     - AlertSystem.java  
     - EmailAlert.java  
-  - SmsAlert.java  
-  - Room.java  
+    - SmsAlert.java  
+    - Room.java  
   - **projectUi/**
     - MainWindow.java
     
