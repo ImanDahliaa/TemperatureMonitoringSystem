@@ -27,7 +27,7 @@ A beginner-friendly Java Swing application that simulates temperature monitoring
 ## 🧪 How to Run
 1. Open in NetBeans, IntelliJ, or Eclipse.
 2. Run:
-   - `projectOperation.Room`
+   - `projectUi.MainWindow`
 
 ## 📥 Download ZIP
 To download the project as a ZIP file:
