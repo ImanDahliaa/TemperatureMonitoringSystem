@@ -56,6 +56,8 @@ This project can be built with **Apache Ant** (using JDK 17).
     - EmailAlert.java
     - SmsAlert.java
     - Room.java
+ -projectUi/
+    -MainWindow.java
 
 ## 🛠️ Technologies
 - Java Swing
