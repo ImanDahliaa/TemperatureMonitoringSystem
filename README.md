@@ -49,13 +49,14 @@ This project can be built with **Apache Ant** (using JDK 17).
 ## 📁 Folder Structure
 src/
 ├── projectOperation/
-│   ├── Sensor.java
-│   ├── TemperatureSensor.java
-│   ├── AlertSystem.java
-│   ├── EmailAlert.java
-│   ├── SmsAlert.java
+│   ├── sensors/
+│   │   ├── Sensor.java
+│   │   └── TemperatureSensor.java
+│   ├── alerts/
+│   │   ├── AlertSystem.java
+│   │   ├── EmailAlert.java
+│   │   └── SmsAlert.java
 │   └── Room.java
-│
 └── projectUi/
     └── MainWindow.java
 
