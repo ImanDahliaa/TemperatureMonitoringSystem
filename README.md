@@ -1,3 +1,5 @@
+# This is a mini project for Object-Oriented Programming subject
+
 # 🌡️ Temperature Monitoring System
 
 [![Java CI with Ant](https://github.com/ImanDahliaa/TemperatureMonitoringSystem/actions/workflows/ant.yml/badge.svg)](https://github.com/ImanDahliaa/TemperatureMonitoringSystem/actions/workflows/ant.yml)
