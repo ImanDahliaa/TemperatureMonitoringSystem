@@ -3,6 +3,7 @@
 # 🌡️ Temperature Monitoring System
 
 ![Status](https://img.shields.io/badge/status-stable-brightgreen.svg)
+![Last Commit](https://img.shields.io/github/last-commit/ImanDahliaa/network-hop-limit-tweak)
 [![Java CI with Ant](https://github.com/ImanDahliaa/TemperatureMonitoringSystem/actions/workflows/ant.yml/badge.svg)](https://github.com/ImanDahliaa/TemperatureMonitoringSystem/actions/workflows/ant.yml)
 
 A beginner-friendly Java Swing application that simulates temperature monitoring with alert messages and a modern dark theme.
